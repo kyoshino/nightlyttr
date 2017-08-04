@@ -13,8 +13,8 @@ const init_view = async () => {
   $input = document.querySelector('#custom_template');
   $tbody = document.querySelector('#variable_tbody');
 
-  $checkbox.addEventListener('change', event => update_title());
-  $input.addEventListener('input', event => update_title());
+  $checkbox.addEventListener('change', event => save_pref());
+  $input.addEventListener('input', event => save_pref());
 
   try {
     const pref = await browser.storage.local.get();
@@ -29,21 +29,27 @@ const init_view = async () => {
     const $cell_desc = $row.insertCell();
     const $cell_value = $row.insertCell();
 
-    $row.addEventListener('click', event => {
-      $input.value += ' ${' + key + '}';
-      update_title();
-    });
+    $row.addEventListener('click', event => insert_variable(key));
 
-    $cell_key.textContent = key;
+    $cell_key.textContent = '${' + key + '}';
     $cell_desc.textContent = browser.i18n.getMessage(`variable_${key}`);
     $cell_value.textContent = value || '(unknown)';
   }
 };
 
 /**
+ * Insert a variable into the custom template when a table row is clicked.
+ * @param {String} key - A variable name.
+ */
+const insert_variable = key => {
+  $input.value += ' ${' + key + '}';
+  save_pref();
+};
+
+/**
  * Save the preference and update the window title bar in background.
  */
-const update_title = async () => {
+const save_pref = async () => {
   enable_custom_title = $checkbox.checked;
   custom_template = $input.value;
 
@@ -53,6 +59,6 @@ const update_title = async () => {
 };
 
 window.addEventListener('DOMContentLoaded', async event => {
-  localize_view();
+  localize_page();
   init_view();
 });

@@ -1,6 +1,6 @@
 /**
- * Retrieve the current variable values.
- * @return {Object} The values.
+ * Retrieve the current variable values from the runtime.
+ * @return {Object.<String,*>} The values.
  */
 const get_variable_values = async () => {
   const browser_info = await browser.runtime.getBrowserInfo();

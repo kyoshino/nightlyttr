@@ -1,15 +1,4 @@
 /**
- * Send a message to the content script.
- * @param {String} command - A distinguishable command name.
- * @param {*} value - Any value to be passed to content.
- */
-const send_message = async (command, value) => {
-  const tabs = await browser.tabs.query({ active: true, currentWindow: true });
-
-  browser.tabs.sendMessage(tabs[0].id, { command, value });
-};
-
-/**
  * Copy a string to the system clipboard.
  * @param {String} str - A string to be copied.
  */
@@ -18,12 +7,12 @@ const copy_to_clipboard = str => {
 
   $textbox.value = str;
   $textbox.select();
-  document.execCommand("Copy");
+  document.execCommand('Copy');
   $textbox.remove();
 };
 
 /**
- * Insert a string into the focused textbox, either <input> or <textarea>, on the current page.
+ * Insert a string into the focused textbox, either <input> or <textarea>, on the current web page.
  * @param {String} str - A string to be inserted.
  */
 const insert_to_textbox = async str => {
@@ -45,9 +34,7 @@ const get_build_id = async () => {
  * @return {String} A summarized extension list.
  */
 const get_extension_list = async () => {
-  const list = await browser.management.getAll();
-
-  return list
+  return (await browser.management.getAll())
       .filter(ext => ext.type === 'extension')
       .sort((a, b) => a.name > b.name)
       .map(ext => ext.name + ' ' + ext.version + (ext.enabled ? '' : ' [DISABLED]'))
@@ -60,8 +47,8 @@ const get_extension_list = async () => {
 const update_inserting_options = async () => {
   await send_message('check_if_textbox_is_focused');
 
-  browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request.command === 'check_if_textbox_is_focused' && request.value) {
+  browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    if (message.command === 'check_if_textbox_is_focused' && message.value) {
       document.querySelectorAll('[data-command^="insert_"]').forEach($item => {
         $item.classList.remove('disabled');
       });
@@ -71,38 +58,36 @@ const update_inserting_options = async () => {
 
 /**
  * Handle a menu command when the user clicked an item.
- * @param {MouseEvent} event - A click event.
+ * @param {String} command - A distinguishable command name.
  */
-const handle_command = async event => {
-  const command = event.target.dataset.command;
-
-  if (command === "copy_build_id") {
+const handle_command = async command => {
+  if (command === 'copy_build_id') {
     copy_to_clipboard(await get_build_id());
   }
 
-  if (command === "insert_build_id") {
+  if (command === 'insert_build_id') {
     await insert_to_textbox(await get_build_id());
   }
 
-  if (command === "copy_extension_list") {
+  if (command === 'copy_extension_list') {
     copy_to_clipboard(await get_extension_list());
   }
 
-  if (command === "insert_extension_list") {
+  if (command === 'insert_extension_list') {
     await insert_to_textbox(await get_extension_list());
   }
 
-  if (command === "open_options_page") {
+  if (command === 'open_options_page') {
     await browser.runtime.openOptionsPage();
   }
 };
 
 window.addEventListener('DOMContentLoaded', async event => {
-  localize_view();
+  localize_page();
   await update_inserting_options();
 });
 
 document.addEventListener('click', async event => {
-  await handle_command(event);
+  await handle_command(event.target.dataset.command);
   window.close();
 });

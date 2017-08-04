@@ -1,12 +1,20 @@
-browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  const $element = document.activeElement;
-  const is_textbox = 'placeholder' in $element && !$element.readOnly;
+/**
+ * Parse a message from the frontend script and execute a specified command.
+ * @param {Object.<String,*>} message - A message object from frontend.
+ */
+const handle_command = message => {
+  const $active = document.activeElement;
+  const is_textbox = 'placeholder' in $active && !$active.readOnly;
 
-  if (request.command === 'check_if_textbox_is_focused') {
+  if (message.command === 'check_if_textbox_is_focused') {
     browser.runtime.sendMessage({ command: 'check_if_textbox_is_focused', value: is_textbox });
   }
 
-  if (request.command === 'insert_to_textbox' && is_textbox) {
-    document.activeElement.value = request.value;
+  if (message.command === 'insert_to_textbox' && is_textbox) {
+    $active.value = message.value;
   }
+};
+
+browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  handle_command(message);
 });
