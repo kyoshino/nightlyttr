@@ -2,9 +2,11 @@
 
 A WebExtension port of [Nightly Tester Tools](https://github.com/mozilla/nightlytt).
 
+<img src="https://pbs.twimg.com/media/DGYHGUWXUAAHTvH.jpg:large" alt="screenshot" width="400">
+
 ## Install
 
-This port is not yet available on [AMO](https://addons.mozilla.org/), but you can [give it a try](https://developer.mozilla.org/Add-ons/WebExtensions/Temporary_Installation_in_Firefox) using the built-in debugging tool of Firefox.
+This port is not yet available on [AMO](https://addons.mozilla.org/), but you can give it a try on [Firefox Nightly](https://nightly.mozilla.org/). Just clone or download this repository and load it as a [temporary add-on](https://developer.mozilla.org/Add-ons/WebExtensions/Temporary_Installation_in_Firefox).
 
 ## Features
 
