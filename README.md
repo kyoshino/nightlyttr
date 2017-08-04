@@ -14,6 +14,7 @@ Those are currently implemented features. Other features may be added soon depen
 * Copy List of Extensions to Clipboard
 * Insert Build ID into Textbox
 * Insert List of Extensions into Textbox
+* Customize Title Bar
 
 ## Limitations
 
@@ -21,3 +22,4 @@ Because of the nature of the limited WebExtensions APIs, not all the features fo
 
 * The change set cannot be retrieved
 * The complete extension list cannot be retrieved
+* Some variables are not available for the custom title template

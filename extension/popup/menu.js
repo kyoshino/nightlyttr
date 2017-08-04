@@ -55,15 +55,6 @@ const get_extension_list = async () => {
 };
 
 /**
- * Localize the menu items.
- */
-const localize_items = () => {
-  document.querySelectorAll('[data-i18n]').forEach($node => {
-    $node.textContent = browser.i18n.getMessage($node.dataset.i18n);
-  });
-};
-
-/**
  * Enable the "insert" menu items if any textbox is getting focused on the page.
  */
 const update_inserting_options = async () => {
@@ -100,10 +91,14 @@ const handle_command = async event => {
   if (command === "insert_extension_list") {
     await insert_to_textbox(await get_extension_list());
   }
+
+  if (command === "open_options_page") {
+    await browser.runtime.openOptionsPage();
+  }
 };
 
 window.addEventListener('DOMContentLoaded', async event => {
-  localize_items();
+  localize_view();
   await update_inserting_options();
 });
 

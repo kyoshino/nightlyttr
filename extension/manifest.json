@@ -13,7 +13,9 @@
     "<all_urls>",
     "activeTab",
     "clipboardWrite",
-    "management"
+    "management",
+    "storage",
+    "tabs"
   ],
   "icons": {
     "48": "icons/icon-48.png",
@@ -27,6 +29,16 @@
     },
     "default_title": "__MSG_extension_name__",
     "default_popup": "popup/menu.html"
+  },
+  "options_ui": {
+    "browser_style": true,
+    "page": "options/options.html"
+  },
+  "background": {
+    "scripts": [
+      "shared/background.js",
+      "background/background.js"
+    ]
   },
   "content_scripts": [
     {
