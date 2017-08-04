@@ -1,0 +1,20 @@
+{
+  "extension_name": {
+    "message": "Nightly Tester Tools Redux"
+  },
+  "extension_description": {
+    "message": "Useful tools for the nightly tester."
+  },
+  "copy_build_id": {
+    "message": "Copy Build ID to Clipboard"
+  },
+  "insert_build_id": {
+    "message": "Insert Build ID into Textbox"
+  },
+  "copy_extension_list": {
+    "message": "Copy List of Extensions to Clipboard"
+  },
+  "insert_extension_list": {
+    "message": "Insert List of Extensions into Textbox"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "extension_name": {
+    "message": "Nightly Tester Tools Redux"
+  },
+  "extension_description": {
+    "message": "nightly 测试者的实用工具集。"
+  },
+  "copy_build_id": {
+    "message": "复制 Build ID 到剪贴板"
+  },
+  "insert_build_id": {
+    "message": "插入 Build ID 到文本框"
+  },
+  "copy_extension_list": {
+    "message": "复制扩展列表到剪贴板"
+  },
+  "insert_extension_list": {
+    "message": "插入扩展列表到文本框"
+  }
+}

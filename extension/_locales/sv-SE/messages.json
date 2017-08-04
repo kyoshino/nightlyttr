@@ -1,0 +1,20 @@
+{
+  "extension_name": {
+    "message": "Nightly Tester Tools Redux"
+  },
+  "extension_description": {
+    "message": "Användbara verktyg för Nightly-testaren."
+  },
+  "copy_build_id": {
+    "message": "Kopiera byggets ID till Urklipp"
+  },
+  "insert_build_id": {
+    "message": "Infoga byggets ID i textruta"
+  },
+  "copy_extension_list": {
+    "message": "Kopiera lista över tillägg till Urklipp"
+  },
+  "insert_extension_list": {
+    "message": "Infoga lista över tillägg i textruta"
+  }
+}

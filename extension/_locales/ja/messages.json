@@ -1,0 +1,20 @@
+{
+  "extension_name": {
+    "message": "Nightly Tester Tools Redux"
+  },
+  "extension_description": {
+    "message": "開発版のテスト利用者のための有用なツールを提供します"
+  },
+  "copy_build_id": {
+    "message": "ビルド ID をクリップボードにコピー"
+  },
+  "insert_build_id": {
+    "message": "ビルド ID をテキストボックスに挿入"
+  },
+  "copy_extension_list": {
+    "message": "アドオンの一覧をクリップボードにコピー"
+  },
+  "insert_extension_list": {
+    "message": "アドオンの一覧をテキストボックスに挿入"
+  }
+}

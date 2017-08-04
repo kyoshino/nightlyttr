@@ -1,0 +1,20 @@
+{
+  "extension_name": {
+    "message": "Nightly Tester Tools Redux"
+  },
+  "extension_description": {
+    "message": "Полезные инструменты nightly-тестера."
+  },
+  "copy_build_id": {
+    "message": "Копировать Build ID в буфер обмена"
+  },
+  "insert_build_id": {
+    "message": "Вставить Build ID в текстовое поле"
+  },
+  "copy_extension_list": {
+    "message": "Копировать список расширений в буфер обмена"
+  },
+  "insert_extension_list": {
+    "message": "Вставить список расширений в текстовое поле"
+  }
+}

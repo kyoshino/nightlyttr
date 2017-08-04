@@ -1,0 +1,20 @@
+{
+  "extension_name": {
+    "message": "Nightly Tester Tools Redux"
+  },
+  "extension_description": {
+    "message": "Użyteczne narzędzia dla testerów wersji Nightly."
+  },
+  "copy_build_id": {
+    "message": "Kopiuj identyfikator kompilacji do schowka"
+  },
+  "insert_build_id": {
+    "message": "Wstaw identyfikator kompilacji do pola tekstowego"
+  },
+  "copy_extension_list": {
+    "message": "Kopiuj listę rozszerzeń do schowka"
+  },
+  "insert_extension_list": {
+    "message": "Wstaw listę rozszerzeń do pola tekstowego"
+  }
+}
