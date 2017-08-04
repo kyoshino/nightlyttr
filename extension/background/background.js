@@ -1,8 +1,8 @@
 /**
  * Update the title bar prefix of each window.
- * @param {Array.<Window>} windows - A list of windows to be updated.
  */
-const update_titlebar = async windows => {
+const update_titlebar = async () => {
+  const windows = await browser.windows.getAll();
   const values = await get_variable_values();
   let pref;
   let prefix = ' '; // An empty string doesn't work
@@ -40,10 +40,8 @@ const find_value = (values, key) => {
   return '';
 };
 
-browser.windows.onCreated.addListener(async win => {
-  await update_titlebar([win]);
-});
-
-browser.storage.onChanged.addListener(async (changes, area) => {
-  await update_titlebar(await browser.windows.getAll());
-});
+browser.storage.onChanged.addListener(async () => await update_titlebar());
+browser.windows.onCreated.addListener(async () => await update_titlebar());
+browser.windows.onRemoved.addListener(async () => await update_titlebar());
+browser.tabs.onCreated.addListener(async () => await update_titlebar());
+browser.tabs.onRemoved.addListener(async () => await update_titlebar());
