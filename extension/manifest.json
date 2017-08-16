@@ -28,22 +28,22 @@
       "32": "icons/icon-32.png"
     },
     "default_title": "__MSG_extension_name__",
-    "default_popup": "popup/menu.html"
+    "default_popup": "menu.html"
   },
   "options_ui": {
     "browser_style": true,
-    "page": "options/options.html"
+    "page": "options.html"
   },
   "background": {
     "scripts": [
-      "shared/background.js",
-      "background/background.js"
+      "shared.js",
+      "background.js"
     ]
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content_scripts/content.js"]
+      "js": ["content.js"]
     }
   ]
 }
