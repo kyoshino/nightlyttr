@@ -11,11 +11,17 @@
   "insert_build_id": {
     "message": "插入 Build ID 到文本框"
   },
+  "insert_build_id_context": {
+    "message": "插入 Build ID"
+  },
   "copy_extension_list": {
     "message": "复制扩展列表到剪贴板"
   },
   "insert_extension_list": {
     "message": "插入扩展列表到文本框"
+  },
+  "insert_extension_list_context": {
+    "message": "插入扩展列表"
   },
   "open_options_page": {
     "message": "选项…"

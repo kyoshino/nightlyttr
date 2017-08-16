@@ -11,11 +11,17 @@
   "insert_build_id": {
     "message": "Wstaw identyfikator kompilacji do pola tekstowego"
   },
+  "insert_build_id_context": {
+    "message": "Wstaw identyfikator kompilacji"
+  },
   "copy_extension_list": {
     "message": "Kopiuj listę rozszerzeń do schowka"
   },
   "insert_extension_list": {
     "message": "Wstaw listę rozszerzeń do pola tekstowego"
+  },
+  "insert_extension_list_context": {
+    "message": "Wstaw listę rozszerzeń"
   },
   "open_options_page": {
     "message": "Opcje…"

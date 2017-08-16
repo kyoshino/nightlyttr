@@ -11,11 +11,17 @@
   "insert_build_id": {
     "message": "Infoga byggets ID i textruta"
   },
+  "insert_build_id_context": {
+    "message": "Infoga byggets ID"
+  },
   "copy_extension_list": {
     "message": "Kopiera lista över tillägg till Urklipp"
   },
   "insert_extension_list": {
     "message": "Infoga lista över tillägg i textruta"
+  },
+  "insert_extension_list_context": {
+    "message": "Infoga lista över tillägg"
   },
   "open_options_page": {
     "message": "Alternativ…"

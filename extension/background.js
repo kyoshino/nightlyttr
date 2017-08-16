@@ -40,6 +40,50 @@ const find_value = (values, key) => {
   return '';
 };
 
+/**
+ * @todo Add the following Tools menu items once Bug 1272869 is solved.
+browser.menus.create({
+  contexts: ['tools_menu'],
+  title: browser.i18n.getMessage('copy_build_id'),
+  onclick: () => handle_command('copy_build_id'),
+});
+
+browser.menus.create({
+  contexts: ['tools_menu'],
+  title: browser.i18n.getMessage('copy_extension_list'),
+  onclick: () => handle_command('copy_extension_list'),
+});
+
+browser.menus.create({
+  contexts: ['tools_menu'],
+  type: 'separator',
+});
+
+browser.menus.create({
+  contexts: ['tools_menu'],
+  title: browser.i18n.getMessage('insert_build_id'),
+  onclick: () => handle_command('insert_build_id'),
+});
+
+browser.menus.create({
+  contexts: ['tools_menu'],
+  title: browser.i18n.getMessage('insert_extension_list'),
+  onclick: () => handle_command('insert_extension_list'),
+});
+ */
+
+browser.menus.create({
+  contexts: ['editable'],
+  title: browser.i18n.getMessage('insert_build_id_context'),
+  onclick: () => handle_command('insert_build_id'),
+});
+
+browser.menus.create({
+  contexts: ['editable'],
+  title: browser.i18n.getMessage('insert_extension_list_context'),
+  onclick: () => handle_command('insert_extension_list'),
+});
+
 browser.storage.onChanged.addListener(async () => await update_titlebar());
 browser.windows.onCreated.addListener(async () => await update_titlebar());
 browser.windows.onRemoved.addListener(async () => await update_titlebar());

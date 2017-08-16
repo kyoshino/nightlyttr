@@ -11,11 +11,17 @@
   "insert_build_id": {
     "message": "Вставить Build ID в текстовое поле"
   },
+  "insert_build_id_context": {
+    "message": "Вставить Build ID"
+  },
   "copy_extension_list": {
     "message": "Копировать список расширений в буфер обмена"
   },
   "insert_extension_list": {
     "message": "Вставить список расширений в текстовое поле"
+  },
+  "insert_extension_list_context": {
+    "message": "Вставить список расширений"
   },
   "open_options_page": {
     "message": "Настройки…"

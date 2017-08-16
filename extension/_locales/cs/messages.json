@@ -11,11 +11,17 @@
   "insert_build_id": {
     "message": "Vložit ID sestavení do textového pole"
   },
+  "insert_build_id_context": {
+    "message": "Vložit ID sestavení"
+  },
   "copy_extension_list": {
     "message": "Zkopírovat seznamu rozšíření do schránky"
   },
   "insert_extension_list": {
     "message": "Vložit seznam rozšíření do textového pole"
+  },
+  "insert_extension_list_context": {
+    "message": "Vložit seznam rozšíření"
   },
   "open_options_page": {
     "message": "Možnosti…"

@@ -11,11 +11,17 @@
   "insert_build_id": {
     "message": "ビルド ID をテキストボックスに挿入"
   },
+  "insert_build_id_context": {
+    "message": "ビルド ID を挿入"
+  },
   "copy_extension_list": {
     "message": "アドオンの一覧をクリップボードにコピー"
   },
   "insert_extension_list": {
     "message": "アドオンの一覧をテキストボックスに挿入"
+  },
+  "insert_extension_list_context": {
+    "message": "アドオンの一覧を挿入"
   },
   "open_options_page": {
     "message": "オプション..."

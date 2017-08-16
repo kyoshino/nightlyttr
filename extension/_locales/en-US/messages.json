@@ -11,11 +11,17 @@
   "insert_build_id": {
     "message": "Insert Build ID into Textbox"
   },
+  "insert_build_id_context": {
+    "message": "Insert Build ID"
+  },
   "copy_extension_list": {
     "message": "Copy List of Extensions to Clipboard"
   },
   "insert_extension_list": {
     "message": "Insert List of Extensions into Textbox"
+  },
+  "insert_extension_list_context": {
+    "message": "Insert List of Extensions"
   },
   "open_options_page": {
     "message": "Options…"
