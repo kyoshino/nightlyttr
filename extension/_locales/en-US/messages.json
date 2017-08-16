@@ -5,13 +5,13 @@
   "extension_description": {
     "message": "Useful tools for the nightly tester."
   },
-  "copy_build_id": {
+  "copy_build_info": {
     "message": "Copy Build ID to Clipboard"
   },
-  "insert_build_id": {
+  "insert_build_info": {
     "message": "Insert Build ID into Textbox"
   },
-  "insert_build_id_context": {
+  "insert_build_info_context": {
     "message": "Insert Build ID"
   },
   "copy_extension_list": {

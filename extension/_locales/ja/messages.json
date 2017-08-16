@@ -5,13 +5,13 @@
   "extension_description": {
     "message": "開発版のテスト利用者のための有用なツールを提供します"
   },
-  "copy_build_id": {
+  "copy_build_info": {
     "message": "ビルド ID をクリップボードにコピー"
   },
-  "insert_build_id": {
+  "insert_build_info": {
     "message": "ビルド ID をテキストボックスに挿入"
   },
-  "insert_build_id_context": {
+  "insert_build_info_context": {
     "message": "ビルド ID を挿入"
   },
   "copy_extension_list": {

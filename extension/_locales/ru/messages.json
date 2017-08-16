@@ -5,13 +5,13 @@
   "extension_description": {
     "message": "Полезные инструменты nightly-тестера."
   },
-  "copy_build_id": {
+  "copy_build_info": {
     "message": "Копировать Build ID в буфер обмена"
   },
-  "insert_build_id": {
+  "insert_build_info": {
     "message": "Вставить Build ID в текстовое поле"
   },
-  "insert_build_id_context": {
+  "insert_build_info_context": {
     "message": "Вставить Build ID"
   },
   "copy_extension_list": {

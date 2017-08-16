@@ -72,13 +72,13 @@ const insert_to_textbox = async str => {
 };
 
 /**
- * Get the build ID of the browser.
+ * Get the build info of the browser. The changeset cannot be retrieved at this time.
  * @return {String} A summarized build info.
  */
-const get_build_id = async () => {
+const get_build_info = async () => {
   const info = await browser.runtime.getBrowserInfo();
 
-  return navigator.userAgent + ' ID: ' + info.buildID + ' CSet: (unknown)';
+  return `${navigator.userAgent} ID:${info.buildID}`;
 };
 
 /**
@@ -98,12 +98,12 @@ const get_extension_list = async () => {
  * @param {String} command - A distinguishable command name.
  */
 const handle_command = async command => {
-  if (command === 'copy_build_id') {
-    copy_to_clipboard(await get_build_id());
+  if (command === 'copy_build_info') {
+    copy_to_clipboard(await get_build_info());
   }
 
-  if (command === 'insert_build_id') {
-    await insert_to_textbox(await get_build_id());
+  if (command === 'insert_build_info') {
+    await insert_to_textbox(await get_build_info());
   }
 
   if (command === 'copy_extension_list') {

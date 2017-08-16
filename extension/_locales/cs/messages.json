@@ -5,13 +5,13 @@
   "extension_description": {
     "message": "Šikovný nástroj pro testování nočních sestavení."
   },
-  "copy_build_id": {
+  "copy_build_info": {
     "message": "Zkopírovat ID sestavení do schránky"
   },
-  "insert_build_id": {
+  "insert_build_info": {
     "message": "Vložit ID sestavení do textového pole"
   },
-  "insert_build_id_context": {
+  "insert_build_info_context": {
     "message": "Vložit ID sestavení"
   },
   "copy_extension_list": {

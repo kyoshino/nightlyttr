@@ -5,13 +5,13 @@
   "extension_description": {
     "message": "Użyteczne narzędzia dla testerów wersji Nightly."
   },
-  "copy_build_id": {
+  "copy_build_info": {
     "message": "Kopiuj identyfikator kompilacji do schowka"
   },
-  "insert_build_id": {
+  "insert_build_info": {
     "message": "Wstaw identyfikator kompilacji do pola tekstowego"
   },
-  "insert_build_id_context": {
+  "insert_build_info_context": {
     "message": "Wstaw identyfikator kompilacji"
   },
   "copy_extension_list": {

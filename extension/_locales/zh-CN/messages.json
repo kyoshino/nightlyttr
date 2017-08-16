@@ -5,13 +5,13 @@
   "extension_description": {
     "message": "nightly 测试者的实用工具集。"
   },
-  "copy_build_id": {
+  "copy_build_info": {
     "message": "复制 Build ID 到剪贴板"
   },
-  "insert_build_id": {
+  "insert_build_info": {
     "message": "插入 Build ID 到文本框"
   },
-  "insert_build_id_context": {
+  "insert_build_info_context": {
     "message": "插入 Build ID"
   },
   "copy_extension_list": {

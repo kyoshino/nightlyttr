@@ -44,8 +44,8 @@ const find_value = (values, key) => {
  * @todo Add the following Tools menu items once Bug 1272869 is solved.
 browser.menus.create({
   contexts: ['tools_menu'],
-  title: browser.i18n.getMessage('copy_build_id'),
-  onclick: () => handle_command('copy_build_id'),
+  title: browser.i18n.getMessage('copy_build_info'),
+  onclick: () => handle_command('copy_build_info'),
 });
 
 browser.menus.create({
@@ -61,8 +61,8 @@ browser.menus.create({
 
 browser.menus.create({
   contexts: ['tools_menu'],
-  title: browser.i18n.getMessage('insert_build_id'),
-  onclick: () => handle_command('insert_build_id'),
+  title: browser.i18n.getMessage('insert_build_info'),
+  onclick: () => handle_command('insert_build_info'),
 });
 
 browser.menus.create({
@@ -74,8 +74,8 @@ browser.menus.create({
 
 browser.menus.create({
   contexts: ['editable'],
-  title: browser.i18n.getMessage('insert_build_id_context'),
-  onclick: () => handle_command('insert_build_id'),
+  title: browser.i18n.getMessage('insert_build_info_context'),
+  onclick: () => handle_command('insert_build_info'),
 });
 
 browser.menus.create({

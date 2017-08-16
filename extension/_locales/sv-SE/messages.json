@@ -5,13 +5,13 @@
   "extension_description": {
     "message": "Användbara verktyg för Nightly-testaren."
   },
-  "copy_build_id": {
+  "copy_build_info": {
     "message": "Kopiera byggets ID till Urklipp"
   },
-  "insert_build_id": {
+  "insert_build_info": {
     "message": "Infoga byggets ID i textruta"
   },
-  "insert_build_id_context": {
+  "insert_build_info_context": {
     "message": "Infoga byggets ID"
   },
   "copy_extension_list": {
