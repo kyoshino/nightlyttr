@@ -1,14 +1,17 @@
 {
   "manifest_version": 2,
+  "applications": {
+      "gecko": {
+        "id": "{8620c15f-30dc-4dba-a131-7c5d20cf4a29}",
+        "strict_min_version": "56.0"
+      }
+  },
   "name": "__MSG_extension_name__",
   "description": "__MSG_extension_description__",
   "version": "4.0",
-  "homepage_url": "https://wiki.mozilla.org/Auto-tools/Automation_Development/Projects/Addons/NightlyTesterTools",
+  "author": "Automation Development",
+  "homepage_url": "https://wiki.mozilla.org/QA/Automation/Projects/Addons/NightlyTesterTools",
   "default_locale": "en_US",
-  "developer": {
-    "name": "Kohei Yoshino",
-    "url": "https://github.com/kyoshino"
-  },
   "permissions": [
     "<all_urls>",
     "activeTab",
