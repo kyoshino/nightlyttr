@@ -4,7 +4,7 @@
   "description": "__MSG_extension_description__",
   "version": "4.0",
   "homepage_url": "https://wiki.mozilla.org/Auto-tools/Automation_Development/Projects/Addons/NightlyTesterTools",
-  "default_locale": "en-US",
+  "default_locale": "en_US",
   "developer": {
     "name": "Kohei Yoshino",
     "url": "https://github.com/kyoshino"
