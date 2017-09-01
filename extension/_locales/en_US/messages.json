@@ -66,10 +66,10 @@
     "message": "Built from that changeset"
   },
   "variable_PlatformBuildID": {
-    "message": "XUL Platform Build Identifier"
+    "message": "Gecko Platform Build Identifier"
   },
   "variable_PlatformVersion": {
-    "message": "XUL Platform Version"
+    "message": "Gecko Platform Version"
   },
   "variable_GeckoBuildID": {
     "message": "Gecko Build Identifier"

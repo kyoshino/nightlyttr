@@ -66,10 +66,10 @@
     "message": "Собрано из этого changeset"
   },
   "variable_PlatformBuildID": {
-    "message": "Идентификатор сборки платформы XUL"
+    "message": "Идентификатор сборки платформы Gecko"
   },
   "variable_PlatformVersion": {
-    "message": "Версия платформы XUL"
+    "message": "Версия платформы Gecko"
   },
   "variable_GeckoBuildID": {
     "message": "Идентификатор сборки Gecko"

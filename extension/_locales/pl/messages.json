@@ -66,10 +66,10 @@
     "message": "Rewizja kompilacji"
   },
   "variable_PlatformBuildID": {
-    "message": "Identyfikator kompilacji platformy XUL"
+    "message": "Identyfikator kompilacji platformy Gecko"
   },
   "variable_PlatformVersion": {
-    "message": "Wersja platformy XUL"
+    "message": "Wersja platformy Gecko"
   },
   "variable_GeckoBuildID": {
     "message": "Identyfikator kompilacji Gecko"

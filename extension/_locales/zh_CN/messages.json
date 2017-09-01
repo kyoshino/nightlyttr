@@ -66,10 +66,10 @@
     "message": "由此变更集构建"
   },
   "variable_PlatformBuildID": {
-    "message": "XUL 平台构建标识符"
+    "message": "Gecko 平台构建标识符"
   },
   "variable_PlatformVersion": {
-    "message": "XUL 平台版本"
+    "message": "Gecko 平台版本"
   },
   "variable_GeckoBuildID": {
     "message": "Gecko 构建标识符"

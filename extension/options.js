@@ -33,7 +33,7 @@ const init_view = async () => {
     const $cell_desc = $row.insertCell();
     const $cell_value = $row.insertCell();
 
-    $row.addEventListener('click', event => insert_variable(key));
+    $row.addEventListener('click', event => insert_or_remove_variable(key));
 
     $cell_key.textContent = '${' + key + '}';
     $cell_desc.textContent = browser.i18n.getMessage(`variable_${key}`);
@@ -42,11 +42,21 @@ const init_view = async () => {
 };
 
 /**
- * Insert a variable into the custom template when a table row is clicked.
+ * Insert a variable into the custom template when a table row is clicked. If the template already contains the
+ * variable, remove it instead.
  * @param {String} key - A variable name.
  */
-const insert_variable = key => {
-  $input.value += ' ${' + key + '}';
+const insert_or_remove_variable = key => {
+  const str = '${' + key + '}';
+
+  if ($input.value.includes(str)) {
+    $input.value = $input.value.replace(str, '');
+  } else {
+    $input.value += ' ' + str;
+  }
+
+  $input.value = $input.value.trim().replace(/\s{2,}/g, ' ');
+
   save_pref();
 };
 

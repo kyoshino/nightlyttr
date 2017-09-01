@@ -88,6 +88,7 @@ const get_build_info = async () => {
 /**
  * Get a list of currently installed extensions.
  * @return {String} A summarized extension list.
+ * @todo Make the separator configurable rather than hardcoding a line break (#232)
  */
 const get_extension_list = async () => {
   return (await browser.management.getAll())
@@ -102,23 +103,11 @@ const get_extension_list = async () => {
  * @param {String} command - A distinguishable command name.
  */
 const handle_command = async command => {
-  if (command === 'copy_build_info') {
-    copy_to_clipboard(await get_build_info());
-  }
-
-  if (command === 'insert_build_info') {
-    await insert_to_textbox(await get_build_info());
-  }
-
-  if (command === 'copy_extension_list') {
-    copy_to_clipboard(await get_extension_list());
-  }
-
-  if (command === 'insert_extension_list') {
-    await insert_to_textbox(await get_extension_list());
-  }
-
-  if (command === 'open_options_page') {
-    await browser.runtime.openOptionsPage();
-  }
+  await ({
+    'copy_build_info': async () => copy_to_clipboard(await get_build_info()),
+    'insert_build_info': async () => insert_to_textbox(await get_build_info()),
+    'copy_extension_list': async () => copy_to_clipboard(await get_extension_list()),
+    'insert_extension_list': async () => await insert_to_textbox(await get_extension_list()),
+    'open_options_page': async () => await browser.runtime.openOptionsPage(),
+  }[command])();
 };

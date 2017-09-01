@@ -10,10 +10,6 @@ const handle_command = message => {
   const $active = document.activeElement;
   const is_textbox = 'placeholder' in $active && !$active.readOnly;
 
-  if (message.command === 'check_if_textbox_is_focused') {
-    browser.runtime.sendMessage({ command: 'check_if_textbox_is_focused', value: is_textbox });
-  }
-
   if (message.command === 'insert_to_textbox' && is_textbox) {
     $active.value = message.value;
   }

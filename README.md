@@ -6,13 +6,9 @@ Nightly Tester Tools (NTT) is an add-on for aiding testers of Nightly builds of 
 
 ## Features
 
-* Copy Build ID to Clipboard
-* Copy List of Extensions to Clipboard
-* Insert Build ID into Textbox
-* Insert List of Extensions into Textbox
-* Customize Title Bar
-
-As the screenshot above shows, click the toolbar button to access the add-on’s main features. The “insert” items can also be found in the context menu of textboxes on the web.
+* Copy the build ID or list of extensions to the clipboard using the toolbar button
+* Insert the build ID or list of extensions into a textbox using the context menu
+* Option to customize the Title Bar
 
 ## Limitations
 
@@ -22,22 +18,23 @@ There are a couple of known issues due to the limited [WebExtensions APIs](https
 * The extension list does not include system add-ons
 * Some variables are not available for the custom title template
 
-The following features found in the original XUL-based extension are not yet implemented:
+The following features found in the original XUL-based extension are not yet implemented, and some of them may not be implemented again:
 
-* Copy about:support to Pastebin
-* Open Profile Folder
-* Open Pushlog
-* Screenshots utility (Use Firefox Screenshots)
+* Copy `about:support` to Pastebin
+* Open the profile folder (Use `about:support` or `about:profile` page instead to open it)
+* Open the pushlog
+* Screenshot utility (Use [Firefox Screenshots](https://support.mozilla.org/kb/firefox-screenshots) instead)
 * Crash options
-* Extension compatibility fixing
+* Extension compatibility fixer
+* Menu items under Tools
 
 ## Compatibility
 
-The current WebExtension version is compatible with Firefox and SeaMonkey. Use legacy [version 3.10](https://addons.mozilla.org/firefox/addon/nightly-tester-tools/versions/3.10) for Thunderbird.
+The current WebExtension version is only compatible with Firefox. Use legacy [version 3.10](https://addons.mozilla.org/firefox/addon/nightly-tester-tools/versions/3.10) for Thunderbird and SeaMonkey.
 
 ## Install
 
-You can install the latest stable NTT from [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/nightly-tester-tools/).
+You can install the latest stable NTT from [addons.mozilla.org](https://addons.mozilla.org/firefox/addon/nightly-tester-tools/).
 
 To install for development, clone the repo:
 
@@ -69,3 +66,5 @@ You can also [temporarily install the extension](https://developer.mozilla.org/A
 All bugs and feature requests are filed in the Nightly Tester Tools project at GitHub. You can [view the list of open issues](https://github.com/mozilla/nightlytt/issues), or you can [file a new issue](https://github.com/mozilla/nightlytt/issues/new). Check out [the wiki](https://wiki.mozilla.org/Auto-tools/Projects/NightlyTesterTools) for a list of current and proposed features and feel free to file bugs and submit patches.
 
 This project uses [`.editorconfig`](http://editorconfig.org/#overview), which sets defaults for the formatting of the code. So enjoy the use of [compatible editor](http://editorconfig.org/#download). Just download and install the corresponding plugin.
+
+Also, it's encouraged to use the `web-ext lint` command to [check the code](https://developer.mozilla.org/Add-ons/WebExtensions/Getting_started_with_web-ext#Checking_for_code_lint).

@@ -66,10 +66,10 @@
     "message": "ビルド元のチェンジセット"
   },
   "variable_PlatformBuildID": {
-    "message": "XUL プラットフォームのビルド ID"
+    "message": "Gecko プラットフォームのビルド ID"
   },
   "variable_PlatformVersion": {
-    "message": "XUL プラットフォームのバージョン"
+    "message": "Gecko プラットフォームのバージョン"
   },
   "variable_GeckoBuildID": {
     "message": "Gecko のビルド ID"

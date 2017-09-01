@@ -66,10 +66,10 @@
     "message": "Byggt utifrån den här ändringsuppsättningen"
   },
   "variable_PlatformBuildID": {
-    "message": "XUL-plattformsbyggets identifierare"
+    "message": "Gecko-plattformsbyggets identifierare"
   },
   "variable_PlatformVersion": {
-    "message": "XUL-plattformens version"
+    "message": "Gecko-plattformens version"
   },
   "variable_GeckoBuildID": {
     "message": "Geckobyggets identifierare"
