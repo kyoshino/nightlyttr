@@ -9,7 +9,7 @@
   "name": "__MSG_extension_name__",
   "description": "__MSG_extension_description__",
   "version": "4.0",
-  "author": "Automation Development",
+  "author": "Automation Development, Kohei Yoshino",
   "homepage_url": "https://wiki.mozilla.org/QA/Automation/Projects/Addons/NightlyTesterTools",
   "default_locale": "en_US",
   "permissions": [

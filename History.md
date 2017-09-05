@@ -1,6 +1,6 @@
-4.0 / 2017-09-01
+4.0 / 2017-09-05
 ==================
-  * Completely rewrite as a WebExtension for Firefox 57+ since the legacy XUL version is no longer supported (#235)
+  * Rewrite extension to use the WebExtension API since the legacy XUL format is no longer supported (#235)
 
 3.10 / 2017-05-16
 ==================
