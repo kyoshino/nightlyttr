@@ -76,13 +76,14 @@ const insert_to_textbox = async str => {
 };
 
 /**
- * Get the build info of the browser. The changeset cannot be retrieved at this time.
+ * Get the build info of the browser. The changeset can only be retrieved via NTT Additions.
  * @return {String} A summarized build info.
  */
 const get_build_info = async () => {
   const info = await browser.runtime.getBrowserInfo();
+  const cset = browser.ntt ? await browser.ntt.get_changeset() : undefined;
 
-  return `${navigator.userAgent} ID:${info.buildID}`;
+  return `${navigator.userAgent} ID:${info.buildID}` + (cset ? ` CSet:${cset}` : '');
 };
 
 /**

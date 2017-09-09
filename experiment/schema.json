@@ -1,0 +1,16 @@
+[
+  {
+    "namespace": "ntt",
+    "description": "Nightly Tester Tools Additions",
+    "permissions": ["experiments.ntt"],
+    "functions": [
+      {
+        "name": "get_changeset",
+        "type": "function",
+        "description": "Returns the application's current changeset.",
+        "async": true,
+        "parameters": []
+      }
+    ]
+  }
+]
