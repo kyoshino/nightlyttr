@@ -13,8 +13,6 @@
   "homepage_url": "https://wiki.mozilla.org/QA/Automation/Projects/Addons/NightlyTesterTools",
   "default_locale": "en_US",
   "permissions": [
-    "<all_urls>",
-    "activeTab",
     "clipboardWrite",
     "management",
     "menus",

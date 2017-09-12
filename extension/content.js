@@ -11,7 +11,7 @@ const handle_command = message => {
   const is_textbox = 'placeholder' in $active && !$active.readOnly;
 
   if (message.command === 'insert_to_textbox' && is_textbox) {
-    $active.value = message.value;
+    $active.value += ($active.value.length ? ' ' : '') + message.value;
   }
 };
 
