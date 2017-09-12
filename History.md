@@ -1,4 +1,4 @@
-4.0 / 2017-09-05
+4.0 / TBD
 ==================
   * Rewrite extension to use the WebExtension API since the legacy XUL format is no longer supported (#235)
 
